@@ -3,7 +3,7 @@ package random;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Quequh {
+public class Queqe {
 
 	public static void main(String[] args) {
 		Queue queue = new LinkedList();
