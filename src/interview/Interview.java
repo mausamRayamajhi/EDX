@@ -21,6 +21,7 @@ public class Interview {
 		System.out.println(rev);
 		
 		for (int i = 0; i < arr.length; i++) {
+
 			for (int j = i; j < arr.length; j++) {
 				if (arr[i]>arr[j]) {
 					int temp=arr[i];
@@ -29,15 +30,38 @@ public class Interview {
 				}
 			}
 		}
+
 		System.out.println(Arrays.toString(arr));
 		
 		
 		while(orginal !=0) {
 			rem=orginal % 10;
+			System.out.println("rem = "+rem);
 			reverse= reverse*10+rem;
 			orginal= orginal/10;
+			System.out.println("orginal after = "+orginal);
 		}
 		System.out.println("Reverse = "+reverse);
-		
+
+		System.out.println("Factorial of " + 3
+				+ " is " + factorial(3));
+
+
 	}
+
+	private static int factorial(int i) {
+
+		if (i==0){
+			return 1;
+		}
+		return i * factorial(i-1);//3 * 2 * 1
+
+
+
+
+	}
+
+
 }
+
+
